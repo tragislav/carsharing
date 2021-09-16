@@ -13,4 +13,8 @@ $(function () {
         slidesToScroll: 1,
         autoplay: true,
     });
+
+    $('.menu__btn').on('click', () => {
+        $('.menu__list').toggleClass('menu__list--active');
+    });
 });
