@@ -4,6 +4,14 @@ $(function () {
         dots: true,
         autoplay: true,
         fade: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    dots: false,
+                },
+            },
+        ],
     });
 
     $('.reviews__slider').slick({
@@ -12,6 +20,26 @@ $(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1141,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 846,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 586,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
     });
 
     $('.menu__btn').on('click', () => {
